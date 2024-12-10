@@ -1,0 +1,37 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.email,
+.bio {
+  margin: 5px 0;
+}
+
+.bio {
+  color: #007bff;
+}
+
+.email-button {
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
