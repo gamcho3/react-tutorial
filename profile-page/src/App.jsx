@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 import Content from "./Content";
 function App() {
+  const [like, setLike] = useState(0);
+
   return (
     <div className="profile-page">
       <img
@@ -14,6 +17,28 @@ function App() {
       <a href="mailto:qkrdydwls3@gmail.com" className="email-button">
         이메일 보내기
       </a>
+      <button
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          backgroundColor: "#ff4757",
+          color: "white",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          gap: "5px",
+          fontSize: "16px",
+        }}
+        onClick={() => setLike(like + 1)}
+      >
+        <span role="img" aria-label="하트">
+          ❤️
+        </span>
+        좋아요
+        <span>{like}</span>
+      </button>
     </div>
   );
 }
